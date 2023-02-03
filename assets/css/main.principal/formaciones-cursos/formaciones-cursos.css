@@ -1,0 +1,81 @@
+.formaciones_cursos {
+
+    background-color: #FFDFBB;
+    margin: 10rem 0 5rem;
+    padding: 9rem 5rem;
+}
+
+.formaciones_cursos__titulo {
+
+    color: var(--color-titulos);
+    font-size: 2rem;
+    font-weight: var(--negrita);
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.formaciones_cursos__divisor {
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.formaciones_cursos__divisor__informacion__imagen {
+
+    background-color: #BDBBFF;
+    height: 47vh;
+    width: 37vw;
+}
+
+.formaciones_cursos__divisor__informacion__titulo {
+
+    color: var(--color-titulos);
+    font-size: 1.3rem;
+    font-weight: var(--negrita);
+    margin: 1rem 0;
+}
+
+.formaciones_cursos__divisor__informacion__detalle {
+
+    color: var(--color-descripcion);
+    font-weight: var(--negrita);
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 767px) {
+
+    .formaciones_cursos__divisor {
+
+        flex-direction: column;
+    }
+
+    .formaciones_cursos {
+
+        padding: 9rem 2rem;
+    }
+
+    .formaciones_cursos__divisor__informacion {
+
+        text-align: center;
+    }
+
+    .formaciones_cursos__divisor__informacion__imagen {
+
+        width: 100%;
+    }
+
+    .formaciones_cursos__divisor__informacion__detalle {
+
+        padding-bottom: 50px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    .formaciones_cursos {
+
+        padding: 9rem 2rem;
+    }
+}

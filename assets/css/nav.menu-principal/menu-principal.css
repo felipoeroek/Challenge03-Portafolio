@@ -1,0 +1,154 @@
+@import url(../global.css);
+
+.menu-principal {
+
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-around;
+    opacity: .8;
+    padding: 22px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.menu-principal-translate {
+
+    margin-top: -515px;
+    transition: margin-top 2s;
+}
+
+.menu-principal-translate-inverse {
+
+    margin-top: 0;
+    transition: margin-top 2s;
+}
+
+.cambiar {
+
+    background-color: rgb(239, 238, 238);
+    transition: all 0.4s;
+}
+
+.menu-principal__header {
+
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 50%;
+}
+
+.menu-principal__header__link {
+
+    color: var(--color-descripcion);
+    text-decoration: none;
+}
+
+.menu-principal__header__link__imagen {
+
+    height: 70px;
+    padding: 0 15px;
+    vertical-align: middle;
+    width: 14%;
+}
+
+
+.menu-principal__contenedor {
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.menu-principal__lista {
+
+    list-style: none;
+}
+
+.menu-principal__lista__enlaces {
+
+    color: black;
+    font-weight: 640;
+    font-family: var(--fuente);
+    text-decoration: none;
+}
+
+.menu-principal__lista__enlaces-border {
+
+    padding-bottom: 3px;
+    border-bottom: 8px solid #FFDFBB;
+}
+
+.menu-principal__icono-flecha {
+
+    display: none;
+}
+
+.menu-principal__icono-flecha-abajo {
+
+    display: none;
+}
+
+/* Responsive */
+ 
+@media only screen and (max-width: 600px) {
+    
+    .menu-principal__header {
+
+        font-size: 1rem;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 0px) and (max-width:992px){
+
+    .menu-principal {
+
+        background-color: rgb(239, 238, 238);
+        flex-direction: column;
+        justify-content: initial;
+        opacity: 1;
+        position: relative;
+    }
+
+    .menu-principal__contenedor {
+
+        align-items: center;
+        flex-flow: column wrap;
+        height: 400px;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .menu-principal__lista:not(:last-child) {
+
+        border-bottom: 1.9px solid gray;
+        padding-bottom: 8px;
+        text-align: center;
+        width: 90%;
+    }
+
+    .menu-principal__icono-flecha {
+
+        background-image: url("../../img/arrow-up-icon.svg");
+        background-repeat: no-repeat;
+        display: block;
+        height: 10vh;
+        position: absolute;
+        top: 530px;
+        width: 20px;
+    }
+
+    .menu-principal__icono-flecha-abajo {
+
+        background-image: url("../../img/arrow-down-icon.svg");
+        background-repeat: no-repeat;
+        height: 5vh;
+        margin-top: 10px;
+        position: absolute;
+        top: 530px;
+        width: 20px;
+    }
+}

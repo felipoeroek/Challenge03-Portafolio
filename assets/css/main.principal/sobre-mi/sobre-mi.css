@@ -1,0 +1,46 @@
+.sobre_mi {
+
+    background-color: #FFDFBB;
+    line-height: 1.5;
+    margin: 5rem 0;
+    padding: 9rem 0;
+    width: 100%;
+}
+
+.sobre_mi__divisor {
+
+    margin-top: -10vh;
+    padding: 0 calc(100% - 96%);
+    width: 80%;
+}
+
+.sobre_mi__divisor__titulo {
+
+    color: var(--color-titulos);
+    font-size: 2rem;
+    font-weight: var(--negrita);
+    margin-bottom: 2vh;
+}
+
+.sobre_mi__divisor__biografia {
+
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 767px) {
+
+    .sobre_mi__divisor__titulo {
+
+        
+        text-align: center;
+    }
+
+    .sobre_mi__divisor__biografia {
+
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+}

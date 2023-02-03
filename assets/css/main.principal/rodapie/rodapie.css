@@ -1,0 +1,7 @@
+.rodapie__desc {
+
+    color: var(--color-descripcion);
+    font-weight: var(--negrita);
+    line-height: 2;
+    text-align: center;
+}

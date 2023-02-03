@@ -1,0 +1,125 @@
+.experiencia_profesional {
+
+    margin: 0 0 -5rem;
+    padding: 9rem 0;
+}
+
+.experiencia_profesional__titulo {
+
+    color: var(--color-titulos);
+    font-size: 2rem;
+    font-weight: var(--negrita);
+    text-align: center;
+}
+
+.experiencia_profesional__divisor {
+
+    display: flex;
+    align-items: center;
+    padding: 5rem 7rem;
+}
+
+.experiencia_profesional__divisor__imagen {
+
+    height: 60vh;
+    width: 55vw;
+}
+
+
+.experiencia_profesional__divisor__contenido {
+
+    line-height: 2.2;
+    margin: 0 2rem;
+}
+
+.experiencia_profesional__divisor__contenido__titulo{
+
+    color: var(--color-titulos);
+    font-size: 1.4rem;
+    font-weight: var(--negrita);
+}
+
+.experiencia_profesional__divisor__contenido__desc {
+
+    color: var(--color-descripcion);
+    font-size: .9rem;
+}
+
+.experiencia_profesional__divisor__contenido__link {
+
+    text-decoration: none;
+}
+
+.experiencia_profesional__divisor__contenido__link__boton {
+
+    background-color: #E6F2FF;
+    border-width: 0.05rem;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-right: 1rem;
+    padding: 1rem .8rem;
+}
+
+.experiencia_profesional__divisor__contenido__link__boton:hover {
+
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+
+.experiencia_profesional__divisor__contenido__link__boton-demo {
+
+    background-color: #FFC6C3;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.experiencia_profesional__divisor-inverse {
+
+    flex-direction: row-reverse;
+}
+
+.experiencia_profesional__divisor__contenido-inverse {
+
+    width: 100%;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 767px) {
+
+    .experiencia_profesional__divisor {
+
+        flex-direction: column;
+        padding: 5rem 0;
+    }
+
+    .experiencia_profesional__divisor__imagen {
+
+        height: 40vh;
+        width: 100%;
+    }
+
+    .experiencia_profesional__divisor__contenido {
+
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width:992px){
+
+    .experiencia_profesional__divisor {
+
+        padding: 5rem 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+
+    .experiencia_profesional__divisor {
+
+        padding: 5rem 3rem;
+    }
+}

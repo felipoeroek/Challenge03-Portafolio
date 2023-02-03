@@ -1,0 +1,18 @@
+:root {
+
+    --fuente: 'PT Sans', sans-serif;
+    --negrita: 700;
+    --color-titulos: rgb(46, 46, 46);
+    --color-descripcion: rgb(77, 77, 77);
+}
+
+body {
+
+    background-color: #BBDBFF;
+    font-family: var(--fuente);
+}
+
+html {
+
+    scroll-behavior: smooth;
+}

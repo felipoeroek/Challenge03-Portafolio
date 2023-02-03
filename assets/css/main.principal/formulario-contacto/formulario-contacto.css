@@ -1,0 +1,168 @@
+.formulario_contacto {
+
+    background-color: #FFDFBB;
+    display: flex;
+    margin: 5rem 0;
+    padding: 9rem 8rem;
+}
+
+.formulario_contacto__imagen {
+
+    margin: 0 2rem;
+}
+
+.formulario_contacto__grupo {
+
+    width: 100%;
+}
+
+.formulario_contacto__grupo__titulo {
+
+    color: var(--color-titulos);
+    font-size: 2rem;
+    font-weight: var(--negrita);
+    margin: 1rem 0;
+}
+
+.formulario_contacto__grupo__desc {
+
+    color: var(--color-descripcion);
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.formulario_contacto__grupo__input {
+    
+    border-radius: 4px;
+    border: none;
+    border-bottom: 3px solid gray;
+    margin: .5rem 0;
+    padding: 1.5rem 1rem;
+    width: calc(100% - 18%);
+}
+
+.formulario_contacto__grupo__input::placeholder {
+
+    visibility: hidden;
+}
+
+.formulario_contacto__grupo__input:focus {
+
+    border-bottom: 3px solid #ff9792;
+    outline: none;
+    transition: all 0.6s;
+}
+
+.formulario_contacto__grupo__input:not(:placeholder-shown) + .formulario_contacto__grupo__label ,.formulario_contacto__grupo__input:focus + .formulario_contacto__grupo__label{
+
+    font-size: .85rem;
+    margin-top: -70px;
+    position: absolute;
+    transition: all 0.6s;
+}
+
+.formulario_contacto__grupo__label {
+
+    display: block;
+    margin-top: -7vh;
+    margin-left: .7vw;
+    opacity: 0.7;
+    position: absolute;
+    transition: all 0.6s;
+}
+
+.formulario_contacto__grupo__area {
+
+    resize: none;
+}
+
+.formulario_contacto__grupo__label-area {
+
+    margin-top: -170px;
+}
+
+.formulario_contacto__grupo__input:not(:placeholder-shown) +  .formulario_contacto__grupo__label-area,.formulario_contacto__grupo__input:focus + .formulario_contacto__grupo__label-area{
+
+    margin-top: -180px;
+}
+
+.formulario_contacto__grupo__boton {
+
+    border: none;
+    background-color: #ffa09b;
+    color: white;
+    font-weight: var(--negrita);
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+}
+
+/*en relacion con js*/
+
+.formulario_contacto__grupo__span {
+
+    display: none;
+    color: red;
+    font-size: 1.3rem;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 767px) {
+
+    .formulario_contacto {
+
+        flex-direction: column-reverse;
+        padding: 9rem 0;
+    }
+
+    .formulario_contacto__imagen {
+
+        margin: 0 0;
+        width: 100%;
+        padding-top: 20vh;
+    }
+
+    .formulario_contacto__grupo__titulo {
+
+        text-align: center;
+    }
+
+    .formulario_contacto__grupo__desc {
+
+        text-align: center;
+        padding-bottom: 7vh;
+    }
+
+    .formulario_contacto__grupo__input {
+
+        margin-left: 1rem;
+    }
+
+    .formulario_contacto__grupo__label {
+
+        margin-left: 1.2rem;
+    }
+
+    .formulario_contacto__grupo__boton {
+
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width:992px){
+
+    .formulario_contacto {
+
+        padding: 9rem 0;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+
+    .formulario_contacto {
+
+        padding: 9rem 2rem;
+    }
+}

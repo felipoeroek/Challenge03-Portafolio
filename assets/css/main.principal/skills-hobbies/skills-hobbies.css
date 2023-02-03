@@ -1,0 +1,186 @@
+/*SKILLS*/
+.skills_hobbies__titulo {
+
+    color: var(--color-titulos);
+    font-size: 2rem;
+    font-weight: var(--negrita);
+    padding: 9rem 0 0;
+    text-align: center;
+}
+
+.skills_hobbies__divisor-skills {
+
+    animation: agrandarReducir 3s infinite alternate;
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem 5rem 8rem;
+    text-align: center;
+}
+
+.skills_hobbies__divisor-skills__lista {
+
+    list-style: none;
+}
+
+.skills_hobbies__divisor-skills__lista__divisor {
+
+    background-color: #BDBBFF;
+    box-shadow: 0px 2px 5px 3px black;
+    color: var(--color-descripcion);
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 18vw;
+}
+
+.skills_hobbies__divisor-skills__lista__divisor__imagen {
+
+    padding: 1.5rem 0;
+    text-align: center;
+    width: 3rem;
+}
+
+/*HOBBIES*/
+
+.skills_hobbies__divisor-hobbies {
+
+    animation: agrandarReducir 3s infinite alternate;
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem 5rem 17rem;
+    text-align: center;
+}
+
+.skills_hobbies__divisor-hobbies__lista {
+
+    list-style: none;
+}
+
+.skills_hobbies__divisor-hobbies__lista__divisor {
+
+    background-color: #BDBBFF;
+    box-shadow: 0px 2px 5px 3px black;
+    color: var(--color-descripcion);
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 18vw;
+}
+
+.skills_hobbies__divisor-hobbies__lista__divisor__imagen {
+
+    padding: 1.5rem 0;
+    text-align: center;
+    width: 3rem;
+}
+
+/* Animaciones */
+
+@keyframes agrandarReducir {
+    
+
+    from {
+
+        transform: scale(1.08);
+    }
+
+    to {
+
+        transform: scale(1);
+    }
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 767px) {
+
+
+    .skills_hobbies__divisor-skills {
+
+        flex-direction: column;
+        margin: 3rem 3.5rem 4rem;
+    }
+
+    .skills_hobbies__divisor-skills__lista {
+
+        margin-bottom: 3rem;
+    }
+
+    .skills_hobbies__divisor-skills__lista__divisor {
+
+        font-size: 1rem;
+        height: 50vh;
+        width: 100%;
+    }
+
+    .skills_hobbies__divisor-hobbies {
+
+        flex-direction: column;
+        margin: 3rem 3.5rem 4rem;
+    }
+
+    .skills_hobbies__divisor-hobbies__lista {
+
+        margin-bottom: 3rem;
+    }
+
+    .skills_hobbies__divisor-hobbies__lista__divisor {
+
+        font-size: 1rem;
+        height: 50vh;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    .skills_hobbies__divisor-skills__lista__divisor {
+
+        font-size: 1rem;
+        height: 30vh;
+        width: 22vw;
+    }
+
+    .skills_hobbies__divisor-skills__lista__divisor__imagen {
+
+        width: 2.3rem;
+    }
+
+    .skills_hobbies__divisor-hobbies {
+
+        margin: 3rem 2rem 17rem;
+    }
+
+    .skills_hobbies__divisor-hobbies__lista__divisor {
+
+        font-size: 1rem;
+        height: 30vh;
+    }
+
+    .skills_hobbies__divisor-hobbies__lista__divisor__imagen {
+
+        width: 2.3rem;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+
+    .skills_hobbies__divisor-skills__lista__divisor {
+
+
+        height: 40vh;
+    }
+
+    .skills_hobbies__divisor-hobbies__lista__divisor {
+
+
+        height: 40vh;
+    }
+}
